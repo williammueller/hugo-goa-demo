@@ -34,10 +34,13 @@ keywords = ""
 
 ## Social Accounts
 [params.social]
-linkedin = "<willpmueller>"
+linkedin = "willpmueller"
 
 ## Extras
 [params.extra]
 ## copyright = "© 2016. William Mueller. [Some Rights Reserved](http://creativecommons.org/licenses/by/3.0/)." 
 poweredby = false
 hightlightjs = false
+socialmarkup = false
+toc = false
+displayrssicon = false
