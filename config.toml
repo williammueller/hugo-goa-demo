@@ -1,0 +1,43 @@
+## Basic Configuration
+
+baseurl = "https://williammueller.com" 
+builddrafts = false
+canonifyurls = false
+languageCode = "en-US"
+
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+
+author = "William Mueller"
+title = "William Mueller"
+
+theme = "hugo-goa"
+
+## Hugo Built-in Features
+## disqusShortname = "https-shenoybr-github-io-hugo-goa-demo" # Comment out to disable Disqus.
+## googleAnalytics = "XYZ"
+enableRobotsTXT = true
+
+## Site Settings
+[params]
+author = "William Mueller"
+intro = "intro"
+description = "Description <br/> more description"
+authorimage = "headshot.jpg"
+dateformat = "Jan 2, 2006"
+
+## Site Meta Settings
+[params.meta]
+description = "William Mueller"
+keywords = ""
+
+## Social Accounts
+[params.social]
+linkedin = "<willpmueller>"
+
+## Extras
+[params.extra]
+## copyright = "© 2016. William Mueller. [Some Rights Reserved](http://creativecommons.org/licenses/by/3.0/)." 
+poweredby = false
+hightlightjs = false
