@@ -7,7 +7,7 @@ disableKinds = ["page", "section", "taxonomy", "taxonomyTerm"]
 
 [Author]
     name = "William Mueller"
-    bio = "bio"
+#    bio = "bio"
 
 [params]
 
