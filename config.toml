@@ -1,3 +1,228 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "https://example.com"
+defaultContentLanguage = "en"
+# theme
+theme = "uBlogger"
+
+# website title
+title = "William Mueller | EIT"
+
+# whether to use robots.txt
+enableRobotsTXT = true
+# whether to use git commit log
+enableGitInfo = false
+# whether to use emoji code
+enableEmoji = false
+
+[languages]
+  [languages.en]
+    weight = 1
+    # language code
+    languageCode = "en"
+    # language name
+    languageName = "English"
+#    copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
+    # Menu config
+    [languages.en.menu]
+
+    [languages.en.params]
+      # site description
+      description = "William Mueller | EIT"
+      # site keywords
+      keywords = [""]
+
+      # App icon config
+      [languages.en.params.app]
+        # optional site title override for the app when added to an iOS home screen or Android launcher
+        title = "William Mueller"
+        # whether to omit favicon resource links
+        noFavicon = false
+        # modern SVG favicon to use in place of older style .png and .ico files
+        svgFavicon = ""
+        # Android browser theme color
+        themeColor = "#ffffff"
+        # Safari mask icon color
+        iconColor = "#5bbad5"
+        # Windows v8-10 tile color
+        tileColor = "#da532c"
+
+      # Home page config
+      [languages.en.params.home]
+        # amount of RSS pages
+        rss = 10
+        # Home page profile
+        [languages.en.params.home.profile]
+          enable = true
+          # Gravatar Email for preferred avatar in home page
+          gravatarEmail = ""
+          # URL of avatar shown in home page
+          avatarURL = "/images/avatar.png"
+          # title shown in home page (HTML format is supported)
+          title = "William Mueller"
+          # subtitle shown in home page (HTML format is supported)
+          subtitle = "EIT"
+          # whether to show social links
+          social = true
+        # Home page posts
+        [languages.en.params.home.posts]
+          enable = false
+          # special amount of posts in each home posts page
+          paginate = 6
+      # Social config in home page
+      [languages.en.params.social]
+        Linkedin = "willpmueller"
+        RSS = false
+
+[params]
+  # uBlogger theme version
+  version = "1.3.X"
+  # site default theme ("light", "dark", "auto")
+  defaultTheme = "dark"
+  # public git repo url only then enableGitInfo is true
+  # 公共 git 仓库路径，仅在 enableGitInfo 设为 true 时有效
+  gitRepo = "https://github.com/upagge/dolboblog-theme"
+  # which hash function used for SRI, when empty, no SRI is used ("sha256", "sha384", "sha512", "md5")
+  # 哪种哈希函数用来 SRI, 为空时表示不使用 SRI ("sha256", "sha384", "sha512", "md5")
+  fingerprint = ""
+  # date format
+  # 日期格式
+  dateFormat = "2006-01-02"
+  # website images for Open Graph and Twitter Cards
+  # 网站图片, 用于 Open Graph 和 Twitter Cards
+#  images = ["/logo.png"]
+
+  # Header config
+  [params.header]
+    # desktop header mode ("fixed", "normal", "auto")
+    desktopMode = "fixed"
+    # mobile header mode ("fixed", "normal", "auto")
+
+    mobileMode = "auto"
+    # Header title config
+
+    [params.header.title]
+      # URL of the LOGO
+
+#      logo = ""
+      # title name
+
+#      name = "uBlogger"
+      # you can add extra information before the name (HTML format is supported), such as icons
+
+#      pre = "<i class='fas fa-pencil-alt fa-fw'></i>"
+      # you can add extra information after the name (HTML format is supported), such as icons
+
+ #     post = ""
+      # whether to use typeit animation for title name
+      typeit = false
+
+  # Footer config
+
+  [params.footer]
+    enable = false
+    # Custom content (HTML format is supported)
+    # 自定义内容 (支持 HTML 格式)
+    custom = ''
+    # whether to show Hugo and theme info
+    # 是否显示 Hugo 和主题信息
+    hugo = false
+    # whether to show copyright info
+    # 是否显示版权信息
+    copyright = false
+    # whether to show the author
+    # 是否显示作者
+    author = false
+    # license info (HTML format is supported)
+#    license= '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+
+  # Section (all posts) page config
+  [params.section]
+    # special amount of posts in each section page
+    paginate = 20
+    # date format (month and day)
+    dateFormat = "01-02"
+    # amount of RSS pages
+    rss = 10
+
+  # List (category or tag) page config
+  [params.list]
+    # special amount of posts in each list page
+    paginate = 20
+    # date format (month and day)
+    dateFormat = "01-02"
+    # amount of RSS pages
+    rss = 10
+
+  # Comment config
+  [params.comment]
+    enable = false
+
+  # Page config
+  [params.page]
+    # whether to hide a page from home page
+    hiddenFromHomePage = true
+    # whether to hide a page from search results
+    hiddenFromSearch = true
+    # whether to enable twemoji
+    twemoji = false
+    # whether to enable lightgallery
+    lightgallery = false
+    # whether to enable the ruby extended syntax
+    ruby = true
+    # whether to enable the fraction extended syntax
+    fraction = true
+    # whether to enable the fontawesome extended syntax
+    fontawesome = true
+    # whether to show link to Raw Markdown content of the content
+    linkToMarkdown = false
+    # whether to show the full text content in RSS
+    rssFullText = false
+    # Table of the contents config
+    [params.page.toc]
+      # whether to enable the table of the contents
+      enable = true
+      # whether to keep the static table of the contents in front of the post
+      # 是否保持使用文章前面的静态目录
+      keepStatic = false
+      # whether to make the table of the contents in the sidebar automatically collapsed
+      # 是否使侧边目录自动折叠展开
+      auto = false
+    # Code config
+    [params.page.code]
+      # whether to show the copy button of the code block
+      copy = true
+      # the maximum number of lines of displayed code by default
+      maxShownLines = 10
+
+
+    [params.page.share]
+      enable = false
+      Linkedin = false
+
+
+    # Page SEO config
+    [params.page.seo]
+      # image URL
+      images = []
+      # Publisher info
+      [params.page.seo.publisher]
+        name = "xxxx"
+        logoUrl = "/images/avatar.png"
+
+
+  # Site SEO config
+  [params.seo]
+    # image URL
+    image = "/images/Apple-Devices-Preview.png"
+    # thumbnail URL
+    thumbnailUrl = "/images/screenshot.png"
+
+
+# Author config
+# 作者配置
+[author]
+  name = ""
+
+# Permalinks config (https://gohugo.io/content-management/urls/#permalinks)
+[Permalinks]
+  # posts = ":year/:month/:filename"
+  posts = ":filename"
