@@ -1,47 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on William Mueller</title>
-    <link>https://williammueller.com/categories/</link>
-    <description>Recent content in Categories on William Mueller</description>
+    <title>Categories on My New Hugo Site</title>
+    <link>http://example.org/categories/</link>
+    <description>Recent content in Categories on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
-    <lastBuildDate>Mon, 03 Oct 2016 16:59:13 -0400</lastBuildDate><atom:link href="https://williammueller.com/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>propaganda</title>
-      <link>https://williammueller.com/categories/propaganda/</link>
-      <pubDate>Mon, 03 Oct 2016 16:59:13 -0400</pubDate>
-      
-      <guid>https://williammueller.com/categories/propaganda/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>about</title>
-      <link>https://williammueller.com/categories/about/</link>
-      <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
-      
-      <guid>https://williammueller.com/categories/about/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>articles</title>
-      <link>https://williammueller.com/categories/articles/</link>
-      <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
-      
-      <guid>https://williammueller.com/categories/articles/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ad</title>
-      <link>https://williammueller.com/categories/ad/</link>
-      <pubDate>Sun, 02 Oct 2016 15:59:13 -0400</pubDate>
-      
-      <guid>https://williammueller.com/categories/ad/</guid>
-      <description></description>
-    </item>
-    
+    <language>en-us</language><atom:link href="http://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
