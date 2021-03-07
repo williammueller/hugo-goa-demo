@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="en"><head>
-    <title>Tags</title>
+    <title>Math Typesetting</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="" />
+    <meta name="description" content="A brief guide to setup KaTeX" />
 
     
     
     
-    <link rel="stylesheet" href="../css/theme.min.css">
+    <link rel="stylesheet" href="../../css/theme.min.css">
 
     
     
@@ -20,11 +20,11 @@
         <div id="content" class="mx-auto"><header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
     <div class="row">
         <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-4">
-            <a href="../" class="text-decoration-none">
+            <a href="../../" class="text-decoration-none">
                 <img id="home-image" class="rounded-circle"
                     
                         
-                            src="../images/avatar.png"
+                            src="../../images/avatar.png"
                         
                     
                 />
@@ -32,7 +32,7 @@
         </div>
         <div class="col-sm-8 col-12 text-sm-left text-center">
             <h2 class="m-0 mb-2 mt-4">
-                <a href="../" class="text-decoration-none">
+                <a href="../../" class="text-decoration-none">
                     
                         Your Name
                     
@@ -47,15 +47,15 @@
                 
                 
                     <li class="list-inline-item">
-                        <a class="badge badge-white " href="../about/" title="About">About</a>
+                        <a class="badge badge-white " href="../../about/" title="About">About</a>
                     </li>
                 
                     <li class="list-inline-item">
-                        <a class="badge badge-white " href="../post/" title="Posts">Posts</a>
+                        <a class="badge badge-white " href="../../post/" title="Posts">Posts</a>
                     </li>
                 
                     <li class="list-inline-item">
-                        <a class="badge badge-white " href="../categories/" title="Categories">Categories</a>
+                        <a class="badge badge-white " href="../../categories/" title="Categories">Categories</a>
                     </li>
                 
             </ul>
@@ -91,76 +91,45 @@
     <hr />
 </header>
 <div class="container">
-<div class="pl-sm-4 ml-sm-5">
-    <h4> Tags </h4>
-    
-    <ul class="list-unstyled">
-        
-            <li>
-                
-                <a href="../tags/css/">
-                    css
-                </a>
-            </li>
-        
-            <li>
-                
-                <a href="../tags/html/">
-                    html
-                </a>
-            </li>
-        
-            <li>
-                
-                <a href="../tags/markdown/">
-                    markdown
-                </a>
-            </li>
-        
-            <li>
-                
-                <a href="../tags/themes/">
-                    themes
-                </a>
-            </li>
-        
-            <li>
-                
-                <a href="../tags/privacy/">
-                    privacy
-                </a>
-            </li>
-        
-            <li>
-                
-                <a href="../tags/shortcodes/">
-                    shortcodes
-                </a>
-            </li>
-        
-            <li>
-                
-                <a href="../tags/text/">
-                    text
-                </a>
-            </li>
-        
-            <li>
-                
-                <a href="../tags/emoji/">
-                    emoji
-                </a>
-            </li>
-        
-            <li>
-                
-                <a href="../tags/index/">
-                    index
-                </a>
-            </li>
-        
-    </ul>
-</div>
+    <div class="pl-sm-2">
+        <div class="mb-3">
+            <h3 class="mb-0">Math Typesetting</h3>
+            
+            <small class="text-muted">Published March 8, 2019</small>
+        </div>
+
+        <article>
+            <p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.</p>
+
+<p>In this example we will be using <a href="https://katex.org/">KaTeX</a></p>
+
+<ul>
+<li>Create a partial under <code>/layouts/partials/math.html</code></li>
+<li>Within this partial reference the <a href="https://katex.org/docs/autorender.html">Auto-render Extension</a> or host these scripts locally.</li>
+<li>Include the partial in your templates like so:<br></li>
+</ul>
+<pre><code>{{ if or .Params.math .Site.Params.math }}
+{{ partial &#34;math.html&#34; . }}
+{{ end }}</code></pre>
+<ul>
+<li>To enable KaTex globally set the parameter <code>math</code> to <code>true</code> in a project's configuration</li>
+<li>To enable KaTex on a per page basis include the parameter <code>math: true</code> in content files.</li>
+</ul>
+
+<p><strong>Note:</strong> Use the online reference of <a href="https://katex.org/docs/supported.html">Supported TeX Functions</a>
+</p>
+
+<h3 id="examples">Examples</h3>
+
+<p>Inline math: <span  class="math">\( \varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887… \)</span></p>
+
+<p>Block math:</p>
+
+<p><span  class="math">\[
+ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } 
+\]</span></p>
+        </article>
+    </div>
 
             </div>
         </div><footer class="text-center pb-1">
